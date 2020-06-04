@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface HeaderProps {
-    title?: String;
+    title: String;
 };
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = (props) => {
     return (
         <header>
-            <h1>Ecoleta</h1>
+            <h1>{props.title}</h1>
         </header>
     );
 }
